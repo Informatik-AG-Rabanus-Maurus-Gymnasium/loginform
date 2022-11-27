@@ -1,0 +1,116 @@
+/* Basic CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Festlegen der Schriftart der Website */
+html {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+/* Festlegen der Hintergrundfarbe und Textfarbe */
+body {
+    background-color: #090909;
+    color: #eee;
+}
+
+/* Zentrieren der Loginbox */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Aussehen der Loginbox */
+.loginbox {
+    background-color: #13141a;
+    padding: 60px 40px;
+    border-radius: 16px;
+    width: 420px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* PseudoElemente (Verschiedenfarbige hintergrundboxen) stylen */
+.loginbox::before,
+.loginbox::after {
+    content: '';
+    width: 420px;
+    height: 300px;
+    border-radius: 16px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+
+/* Pseudoelement 1 Stylen */
+.loginbox::before {
+    z-index: -1;
+    background-color: rgb(36, 42, 61);
+    transform: translate(-50%, -50%) rotate(5deg);
+}
+
+/* Pseudoelement 2 Stylen */
+.loginbox::after {
+    z-index: -2;
+    background-color: rgb(15, 28, 44);
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+/* Margin für die Überschrift */
+.loginbox>h1 {
+    margin-bottom: 10px;
+}
+
+/* Festlegen der Inline-Elemente */
+.inline {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+/* Zentrieren */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Beschreibungen der Inputs stylen */
+.loginbox label {
+    display: inline-block;
+    width: 150px;
+    color: #bbb;
+}
+
+/* Input Elemente Stylen */
+.loginbox input {
+    display: inline-block;
+    width: 180px;
+    appearance: none;
+    background: #181c23;
+    border: none;
+    box-shadow: 0px 3px 5px #111;
+    border-radius: 25px;
+    padding: 9px 11px;
+    color: #ccc;
+    transition: .5s background;
+}
+
+/* Input Elemente beim drüberfahren mit der Maus (hovern) stylen */
+.loginbox input:hover {
+    background-color: #141920;
+}
+
+/* Input Elemente stylen wenn fokusiert */
+.loginbox input:focus {
+    outline: none;
+    background-color: #12171e;
+}

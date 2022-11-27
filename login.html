@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginformular</title>
+    <!-- Stylesheet einbinden! -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Horizontal und Vertikal Zentrieren -->
+    <div class="container">
+        <!-- Die Farbige Box um den Login -->
+        <div class="loginbox">
+            <h1>Login</h1>
+            <!-- Eine Zeile für Label und Eingabefeld -->
+            <div class="inline">
+                <!-- Beschreibung des Input-Feldes -->
+                <label for="username">Benutzername</label>
+                <!-- Input-Feld für den Benutzernamen -->
+                <input type="text" name="username" placeholder="Benutzername...">
+            </div>
+            <!-- Noch eine Zeile -->
+            <div class="inline">
+                <!-- Beschreibung des 2. Input Feldes -->
+                <label for="password">Passwort</label>
+                <!-- Input-Feld für das Passwort -->
+                <input type="password" name="password" placeholder="Passwort...">
+            </div>
+            <!-- Noch eine Zeile aber Zentriert -->
+            <div class="inline center">
+                <!-- Input zum Abschicken der Daten -->
+                <input type="submit" value="Login">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
