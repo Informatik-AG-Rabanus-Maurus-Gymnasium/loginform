@@ -114,3 +114,30 @@ body {
     outline: none;
     background-color: #12171e;
 }
+
+/* Style für den Submit Button */
+.loginbox input[type="submit"] {
+    margin-top: 15px;
+}
+
+/* Style für Geräte mit maximal 640px Bildschirmbreite */
+@media screen and (max-width: 640px) {
+
+    /* Loginbox schmaler und höher machen */
+    .loginbox,
+    .loginbox::before,
+    .loginbox::after {
+        width: 320px;
+        height: 400px;
+    }
+
+    /* Elemente ein bisschen weiter auseinander */
+    .inline {
+        margin-bottom: 15px;
+    }
+
+    /* Labels ein kleines bisschen nach oben und nach rechts */
+    .loginbox label {
+        margin: 0px 0px 5px 10px;
+    }
+}
